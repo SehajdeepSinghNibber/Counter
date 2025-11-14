@@ -1,0 +1,21 @@
+div {
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  margin: 20px;
+  text-align: center;
+}
+
+button {
+  margin-left: 10px;
+  padding: 8px 16px;
+  font-size: 16px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
