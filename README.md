@@ -79,6 +79,3 @@ The component uses an external CSS file (`Counter.css`) for styling. Make sure t
 // After clicking "Click Me": "You have clicked the button 1 times."
 // After clicking "Reset": "You have clicked the button 0 times."
 ```
-## License
-
-Add your license information he
