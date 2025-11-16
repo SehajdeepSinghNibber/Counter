@@ -1,16 +1,84 @@
-# React + Vite
+# Counter Component
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React counter application that tracks button clicks.
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The Counter component is a basic React component that demonstrates the use of React hooks (specifically `useState`) to manage component state. It displays the number of times a button has been clicked and provides functionality to increment the count or reset it to zero.
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Click Counter**: Displays the total number of times the increment button has been clicked
+- **Increment Button**: Increases the counter by one each time it's clicked
+- **Reset Button**: Resets the counter back to zero
 
-## Expanding the ESLint configuration
+## Installation
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+To use this component in your React project:
+
+1. Ensure you have React installed in your project
+2. Copy the `Counter.jsx` (or `.js`) file to your components folder
+3. Copy the `Counter.css` file to the same location for styling
+
+## Usage
+
+Import and use the Counter component in your application:
+
+```javascript
+import Counter from './Counter'
+
+function App() {
+  return (
+    <div>
+      <Counter />
+    </div>
+  )
+}
+
+export default App
+```
+
+## Component Structure
+
+The component uses React's `useState` hook to manage a single state variable:
+
+- **Counter**: Stores the current count as a number, initialized to 0
+
+### Props
+
+This component does not accept any props.
+
+### State
+
+- `Counter` (number): The current click count
+- `setCounter` (function): Function to update the counter state
+
+## Buttons
+
+- **Click Me**: Increments the counter by 1
+- **Reset**: Resets the counter to 0
+
+## Styling
+
+The component uses an external CSS file (`Counter.css`) for styling. Make sure to import or create this file with your desired styles.
+
+## Code Quality Notes
+
+**Potential improvements**:
+
+- Consider renaming the state variable from `Counter` to `count` (use camelCase for variables)
+- Extract button click handlers to named functions for better readability
+- Add PropTypes for type checking (if desired)
+- Consider adding keyboard shortcuts or accessibility features
+
+## Example
+
+```javascript
+<Counter />
+// Displays: "You have clicked the button 0 times."
+// After clicking "Click Me": "You have clicked the button 1 times."
+// After clicking "Reset": "You have clicked the button 0 times."
+```
+## License
+
+Add your license information he
